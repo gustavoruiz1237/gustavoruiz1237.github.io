@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'poppins', sans-serif;
+  background: #EF835A; 
+}
+
+
+/*navbar*/
+.topnav {
+  background-color: #F8A98A;
+  overflow: hidden;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  height: 120px;
+  align-items: center;
+  top: 0;
+  }
+  
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 40px 42px;
+  text-decoration: none;
+  font-size: 20px;
+}
+  
+.topnav a:hover {
+  background-color: #EF835A;
+  color: #FFEBEB;
+  border-radius: 80px;
+}
+
+.current {
+  background-color: #F68C64;
+  color: #FFEBEB;
+  border-radius: 80px;
+}
+  
+.topnav a.active {
+  background-color: #F8A98A;
+  color: white;
+}
+  
+.topnav-centered a img {
+  width: 200px; 
+}
+  
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+}
+
+.active {
+  text-align: center;
+}
+
+/*gatos*/
+.Cuidados_gatos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.2fr repeat(3, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+
+.titulo_gato { 
+  grid-area: 1 / 1 / 2 / 4;
+  text-align: center;
+  margin-top: 30px;
+}
+.gato_1 { 
+  grid-area: 2 / 1 / 3 / 2;
+  text-align: center;
+  margin: 0;
+}
+.gato_2 { 
+  grid-area: 2 / 2 / 3 / 3;
+  text-align: center;
+}
+.gato_3 { 
+  grid-area: 2 / 3 / 3 / 4;
+  text-align: center;
+}
+.gato_4 {
+  grid-area: 3 / 1 / 4 / 2;
+  text-align: center;
+}
+.gato_5 { 
+  grid-area: 3 / 2 / 4 / 3;
+  text-align: center;
+}
+.gato_6 {
+  grid-area: 3 / 3 / 4 / 4;
+  text-align: center;
+}
+.pata_1 { 
+  grid-area: 4 / 1 / 5 / 2;
+  text-align: left;
+}
+.gato_7 {
+  grid-area: 4 / 2 / 5 / 3;
+  text-align: center;
+}
+.pata_2 {
+  grid-area: 4 / 3 / 5 / 4;
+  text-align: right;
+}
+
+
+/*quadrados azuis*/
+.azul {
+  background: #8CCDD0;
+  color: #FFEBEB;
+  width: 450px;
+  height: 456px;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  margin-left: 90px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.azul p {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin-left: 60px;
+  margin-right: 60px;
+  line-height: 35px;
+}
+
+.azul p b {
+  font-size: 28px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 39px;
+}
+
+
+/*quadrados rosas*/
+.rosa {
+  background: #F8A98A;
+  color: #FFEBEB;
+  width: 450px;
+  height: 456px;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  margin-left: 90px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.rosa p {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin-left: 60px;
+  margin-right: 60px;
+  line-height: 35px;
+}
+
+.rosa p b {
+  font-size: 28px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 39px;
+}
+
+
+/*cachorros*/
+.cuidados_cachorros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.2fr repeat(3, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+
+.titulo_cachorro { 
+  grid-area: 1 / 1 / 2 / 4;
+  text-align: center;
+  margin-top: 50px;
+}
+.dog_1 { 
+  grid-area: 2 / 1 / 3 / 2;
+  text-align: center;
+}
+.dog_2 { 
+  grid-area: 2 / 2 / 3 / 3;
+  text-align: center;
+}
+.dog_3 { 
+  grid-area: 2 / 3 / 3 / 4;
+  text-align: center;
+}
+.dog_4 {
+  grid-area: 3 / 1 / 4 / 2;
+  text-align: center;
+}
+.dog_5 { 
+  grid-area: 3 / 2 / 4 / 3;
+  text-align: center;
+}
+.dog_6 {
+  grid-area: 3 / 3 / 4 / 4;
+  text-align: center;
+}
+.pata_3 { 
+  grid-area: 4 / 1 / 5 / 2;
+  text-align: left;
+}
+.dog_7 {
+  grid-area: 4 / 2 / 5 / 3;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.pata_4 {
+  grid-area: 4 / 3 / 5 / 4;
+  text-align: right;
+}
+
+
+
+
+
+/*rodapé*/
+footer {
+  display: grid;
+  grid-template-columns: 0.45fr repeat(7, 1fr) 0.45fr;
+  grid-template-rows: 0.45fr repeat(4, 1fr) 0.45fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  background-color: #F8A98A;
+  font-size: 28px;
+}
+
+.rodapelogo { grid-area: 3 / 2 / 5 / 4; }
+
+.homeroda { 
+  grid-area: 2 / 4 / 3 / 5;
+  color: #FFEBEB;
+  text-decoration: none;
+  text-align: center;
+}
+
+.FAQs { 
+  grid-area: 3 / 4 / 4 / 5; 
+  color: #FFEBEB;
+  text-decoration: none;
+  text-align: center;
+}
+
+.sobreroda { 
+  grid-area: 4 / 4 / 5 / 5; 
+  color: #FFEBEB;
+  text-decoration: none;
+  text-align: center;
+}
+
+.contatos { 
+  grid-area: 5 / 4 / 6 / 5; 
+  color: #FFEBEB;
+  text-decoration: none;
+  text-align: center;
+}
+
+.barra1 { 
+  grid-area: 2 / 5 / 6 / 6; 
+  align-self: center;
+  text-align: center;
+}
+
+.jornal { 
+  grid-area: 3 / 6 / 4 / 7; 
+  align-self: center;
+  text-align: center;
+  color: #FFEBEB;
+}
+
+.email { 
+  grid-area: 4 / 6 / 5 / 7;
+  align-self: center;
+  text-align: center;
+}
+
+.barra2 { 
+  grid-area: 2 / 7 / 6 / 8; 
+  align-self: center;
+  text-align: center;
+}
+
+.face { 
+  grid-area: 3 / 8 / 3 / 9; 
+  color: #FFEBEB;
+  align-self: center;
+  text-align: center;
+}
+
+.twitter { 
+  grid-area: 4 / 8 / 4 / 9; 
+  color: #FFEBEB;
+  align-self: center;
+  text-align: center;
+}
+
+.insta { 
+  grid-area: 5 / 8 / 5 / 9; 
+  color: #FFEBEB;
+  align-self: center;
+  text-align: center;
+}
+
+.tiktok {
+  grid-area: 2 / 8 / 2 / 9;
+  color: #FFEBEB;
+  align-self: center;
+  text-align: center;
+}

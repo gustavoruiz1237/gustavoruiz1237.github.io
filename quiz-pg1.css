@@ -1,0 +1,118 @@
+/*body*/
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'poppins', sans-serif;
+  background: #F8A98A; 
+}
+
+
+/*Grid*/
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0.5fr repeat(3, 1fr) 0.2fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 15px;
+}
+
+.logo { 
+  grid-area: 1 / 1 / 2 / 2; 
+  text-align: center;
+  align-self: top;
+}
+.texto { 
+  grid-area: 2 / 2 / 3 / 4; 
+  text-align: center;
+  align-self: center;
+  padding-left: 40px;
+}
+.iniciar { 
+  grid-area: 3 / 2 / 4 / 4;
+  text-align: center;
+  align-self: center;
+}
+.site { 
+  grid-area: 4 / 2 / 5 / 4;
+  text-align: center;
+  align-self: top;
+}
+.animais1 { 
+  grid-area: 3 / 1 / 5 / 2;
+  text-align: center;
+  align-self: center;
+}
+.animais2 { 
+  grid-area: 3 / 4 / 5 / 5;
+  text-align: center;
+  align-self: center;
+}
+
+
+/*logo*/
+.logo {
+  margin-left: 30px;
+}
+
+
+/*texto*/
+.texto {
+  color: #FFEBEB;
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.texto p {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin-left: 90px;
+  margin-right: 0px;
+  line-height: 1.3em;
+}
+
+
+/*botão iniciar teste*/
+.btn1 {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 36px;
+  font-weight: 800;
+  background: #F68C64;
+  height: 112px;
+  width: 556px;
+  color: #FFEBEB;
+  cursor: pointer;
+  text-align: center;
+  align-self: center;
+  border-radius: 35px;
+  margin-top: 50px;
+}
+
+.btn1 p {
+  margin-top: 25px;
+}
+
+
+/*clique para entrar*/
+.entrar {
+  color: #FFEBEB;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin-right: 0;
+} 
+
+
+/*site*/
+.site {
+  margin-top: 20px;
+}

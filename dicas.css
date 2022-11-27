@@ -1,0 +1,415 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'poppins', sans-serif;
+  background: #EF835A; 
+}
+
+/*navbar*/
+.topnav {
+  background-color: #F8A98A;
+  overflow: hidden;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  height: 120px;
+  align-items: center;
+  top: 0;
+}
+  
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 40px 42px;
+  text-decoration: none;
+  font-size: 20px;
+}
+  
+.topnav a:hover {
+  background-color: #EF835A;
+  color: #FFEBEB;
+  border-radius: 80px;
+}
+
+.current {
+  background-color: #F68C64;
+  color: #FFEBEB;
+  border-radius: 80px;
+}
+  
+.topnav a.active {
+  background-color: #F8A98A;
+  color: white;
+}
+  
+.topnav-centered a img {
+  width: 200px; 
+}
+  
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+}
+
+.active {
+  text-align: center;
+}
+
+
+/*grid alimentos*/
+.grid_alimentos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr) ;
+  grid-template-rows: 0.1fr 0.2fr 0.6fr 0.2fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+
+.dicastitle { 
+  grid-area: 1 / 1 / 2 / 3; 
+}
+
+.titulo_alimentos { 
+  grid-area: 2 / 3 / 3 / 5;
+  align-self: start;
+  text-align: center;
+  align-items: center;
+}
+.dica1 { 
+  grid-area: 3 / 2 / 4 / 4;
+  align-self: start;
+  text-align: center;
+  width: 594px;
+  height: 717px;
+  left: 98px;
+  top: 466px;
+  line-height: 45px;
+  color: #EF835A;
+}
+.dica2 { 
+  grid-area: 3 / 4 / 4 / 6;
+  align-self: start;
+  text-align: center;
+  padding-left: 40px;
+  width: 547px;
+  height: 801px;
+  left: 794px;
+  top: 424px;
+  line-height: 45px;
+  color: #EF835A;
+  align-items: center;
+}
+
+.puppy {
+  grid-area: 3 / 2 / 4 / 4;
+  align-content: center;
+  padding-left: 380px;
+  padding-top: 640px;
+}
+
+.kitty {
+  grid-area: 3 / 4 / 4 / 6;
+  padding-left: 420px;
+  padding-top: 700px;
+}
+
+/*fixo*/
+.texto {
+  background: #FFEBEB;
+  color: #EF835A;
+  display: flex;
+  align-items: center;
+  text-align: justify;  
+  border-radius: 20px;
+  line-height: 42px;
+  font-weight: 800;
+}
+
+.texto p {
+  font-size: 28px;
+  font-weight: 500;
+  margin-left: 30px;
+  margin-right: 30px;
+  line-height: 40px;
+}
+
+.texto p b {
+  font-size: 30px;
+  font-weight: 800;
+  margin-left: 10px;
+  margin-right: 10px;
+  line-height: 40px;
+}
+
+/*id*/
+#texto1 {
+  width: 650px;
+  height: 775px;
+  left: 70px;
+  top: 446px;
+}
+
+#texto2 {
+  width: 606px;
+  height: 825px;
+  left: 764px;
+  top: 399px;
+}
+
+/*grid lugares*/
+.grid_lugares {
+  display: grid;
+  grid-template-columns: 0.4fr repeat(2, 1fr) 0.4fr;
+  grid-template-rows: 0.2fr 0.3fr 0.3fr 0.3fr 0.4fr 0.6fr 0.5fr 0.3fr 0.2fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+
+.titulo_lugares { 
+  grid-area: 1 / 2 / 2 / 4;
+  text-align: center;
+}
+
+.lugar1 { 
+  grid-area: 2 / 2 / 5 / 3; 
+  align-self: center;
+}
+
+.lugar2 { 
+  grid-area: 5 / 2 / 7 / 3; 
+  align-self: center;
+}
+
+.lugar3 { 
+  grid-area: 7 / 2 / 9 / 3;
+  align-self: center;
+}
+
+.lugar4 {
+  grid-area: 3 / 3 / 6 / 4; 
+  align-self: center;
+}
+
+.lugar5 {
+  grid-area: 6 / 3 / 9 / 4; 
+  align-self: center;
+}
+
+.pata_dica {
+  grid-area: 8 / 4 / 9 / 5; 
+  align-self: center;
+  text-align: right;
+}
+
+/*id*/
+#texto3 {
+  height: 480px;
+  width: 650px;
+  border-radius: 20px;
+}
+
+#texto4 {
+  height: 450px;
+  width: 650px;
+  border-radius: 20px;
+}
+
+#texto5 {
+  height: 410px;
+  width: 650px;
+  border-radius: 20px;
+}
+
+#texto6 {
+  height: 600px;
+  width: 606px;
+  border-radius: 20px;
+}
+
+#texto7 {
+  height: 571px;
+  width: 606px;
+  border-radius: 20px;
+}
+
+/*filmes*/
+.gridfilmes {
+  display: grid;
+  grid-template-columns: 0.45fr repeat(4, 1fr) 0.45fr;
+  grid-template-rows: 0.1fr 0.6fr repeat(4, 1fr) 0.45fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+
+.titlefilmes { 
+  grid-area: 2 / 3 / 3 / 5; 
+  width: 632px;
+  height: 136px;
+  left: 404px;
+  top: 2958px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 68px;
+  text-align: center;
+  color: #FFEBEB;
+  padding-left: 160px;
+}
+
+.movie1 { 
+  grid-area: 3 / 2 / 5 / 4;
+  width: 650px;
+  height: 578px;
+  left: 70px;
+  top: 3104px;
+  color: #EF835A;
+  background:  #FFEBEB;
+  border-radius: 20px;
+  text-align: center;
+  align-self: start;
+  align-items: center; 
+  display: flex;
+  margin-left: 80px;
+}
+
+.movie2 { 
+  grid-area: 3 / 4 / 5 / 6;
+  width: 606px;
+  height: 697px;
+  left: 764px;
+  top: 3107px;
+  color: #EF835A;
+  background:  #FFEBEB;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  margin-left: 102px;
+}
+.movie3 { 
+  grid-area: 5 / 2 / 7 / 4; 
+  width: 650px;
+  height: 783px;
+  left: 98px;
+  top: 3745px;
+  color: #EF835A;
+  background:  #FFEBEB;
+  border-radius: 20px;
+  display: flex;
+  margin-left: 80px;
+}
+.movie4 { 
+  grid-area: 5 / 4 / 7 / 6; 
+  width: 606px;
+  height: 741px;
+  left: 794px;
+  top: 3861px;
+  color: #EF835A;
+  background:  #FFEBEB;
+  border-radius: 20px;
+  display: flex;
+  margin-left: 102px;
+}
+.div6 { grid-area: 2 / 2 / 3 / 3; }
+.div7 { grid-area: 2 / 5 / 3 / 6; }
+
+/*rodapé*/
+footer {
+  display: grid;
+  grid-template-columns: 0.45fr repeat(7, 1fr) 0.45fr;
+  grid-template-rows: 0.45fr repeat(4, 1fr) 0.45fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  background-color: #F8A98A;
+  font-size: 28px;
+}
+
+.rodapelogo { grid-area: 3 / 2 / 5 / 4; }
+
+.homeroda { 
+  grid-area: 2 / 4 / 3 / 5;
+  color: #FFEBEB;
+  text-decoration: none;
+  text-align: center;
+}
+
+.FAQs { 
+  grid-area: 3 / 4 / 4 / 5; 
+  color: #FFEBEB;
+  text-decoration: none;
+  text-align: center;
+}
+
+.sobreroda { 
+  grid-area: 4 / 4 / 5 / 5; 
+  color: #FFEBEB;
+  text-decoration: none;
+  text-align: center;
+}
+
+.contatos { 
+  grid-area: 5 / 4 / 6 / 5; 
+  color: #FFEBEB;
+  text-decoration: none;
+  text-align: center;
+}
+
+.barra1 { 
+  grid-area: 2 / 5 / 6 / 6; 
+  align-self: center;
+  text-align: center;
+}
+
+.jornal { 
+  grid-area: 3 / 6 / 4 / 7; 
+  align-self: center;
+  text-align: center;
+  color: #FFEBEB;
+}
+
+.email { 
+  grid-area: 4 / 6 / 5 / 7;
+  align-self: center;
+  text-align: center;
+}
+
+.barra2 { 
+  grid-area: 2 / 7 / 6 / 8; 
+  align-self: center;
+  text-align: center;
+}
+
+.face { 
+  grid-area: 3 / 8 / 3 / 9; 
+  color: #FFEBEB;
+  align-self: center;
+  text-align: center;
+}
+
+.twitter { 
+  grid-area: 4 / 8 / 4 / 9; 
+  color: #FFEBEB;
+  align-self: center;
+  text-align: center;
+}
+
+.insta { 
+  grid-area: 5 / 8 / 5 / 9; 
+  color: #FFEBEB;
+  align-self: center;
+  text-align: center;
+}
+
+.tiktok {
+  grid-area: 2 / 8 / 2 / 9;
+  color: #FFEBEB;
+  align-self: center;
+  text-align: center;
+}

@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'poppins', sans-serif;
+  background: #9DDADD; 
+}
+
+
+/*navbar*/
+.topnav {
+  background-color: #F8A98A;
+  overflow: hidden;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  height: 120px;
+  align-items: center;
+  top: 0;
+}
+  
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 40px 42px;
+  text-decoration: none;
+  font-size: 20px;
+}
+    
+.topnav a:hover {
+  background-color: #EF835A;
+  color: #FFEBEB;
+  border-radius: 80px;
+}
+
+.current {
+  background-color: #F68C64;
+  color: #FFEBEB;
+  border-radius: 80px;
+}
+  
+.topnav a.active {
+  background-color: #F8A98A;
+  color: white;
+}
+  
+.topnav-centered a img {
+  width: 200px; 
+}
+  
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+}
+
+.active {
+  text-align: center;
+}
+
+/*grid*/
+
+.grid_receitas {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr) 0.45fr;
+  grid-template-rows: repeat(6, 1fr) 0.45fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+
+/*receitas*/
+
+.titlereceita { 
+  grid-area: 1 / 1 / 3 / 3;
+}
+
+.cat1 { 
+  grid-area: 1 / 2 / 2 / 4; 
+  z-index: 1;
+  padding-top: 80px;
+  padding-left: 80px;
+}
+.cat2 { 
+  grid-area: 6 / 6 / 7 / 7; 
+}
+
+
+/*texto1*/
+.petisco { 
+  grid-area: 2 / 2 / 5 / 4;
+  align-items: center;  
+  background: #FFEBEB;
+  color: #EF835A;
+  height: 800px;
+  width: 650px;
+  border-radius: 20px;
+  display: flex;
+  margin-top: 80px;
+}
+
+/*texto2*/
+.apple { 
+  grid-area: 5 / 2 / 7 / 4;
+  align-items: center;  
+  background: #FFEBEB;
+  color: #EF835A;
+  height: 614px;
+  width: 650px;
+  border-radius: 20px;
+  display: flex;
+  margin-top: 20px;
+}
+
+/*texto3*/
+.sorvete { 
+  grid-area: 1 / 4 / 4 / 6;
+  align-items: center; 
+  background: #FFEBEB;
+  color: #EF835A;
+  height: 465px;
+  width: 606px;
+  border-radius: 20px;
+  display: flex;
+  margin-top: 80px;
+}
+
+/*texto4*/
+.salmao { 
+  grid-area: 3 / 4 / 6 / 6;
+  align-items: center; 
+  background: #FFEBEB;
+  color: #EF835A;
+  height: 611px;
+  width: 606px;
+  border-radius: 20px;
+  display: flex;
+  margin-top: 0px;
+}
+
+/*texto5*/
+.atum { 
+  grid-area: 5 / 4 / 8 / 6;
+  align-items: center; 
+  background: #FFEBEB;
+  color: #EF835A;
+  height: 647px;
+  width: 606px;
+  border-radius: 20px;
+  display: flex;
+  margin-top: 80px;
+}
+
+
+/*fixo*/
+.texto p {
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 30px;
+  margin-right: 30px;
+  line-height: 35px;  
+  text-align: justify;
+}
+
+.bold1 {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 39px;
+}
+
+.bold2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+/*receitas cachorros*/
+.grid_receitas2 {
+  display: grid;
+  grid-template-columns: 0.45fr repeat(4, 1fr) 0.45fr;
+  grid-template-rows: repeat(6, 1fr) ;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+
+.titlereceita2 { 
+  grid-area: 1 / 1 / 2 / 3; 
+}
+.dogreceita { 
+  grid-area: 1 / 3 / 2 / 4; 
+  align-items: center;
+  padding-top: 200px;
+}
+.guisado { 
+  grid-area: 2 / 2 / 5 / 4;
+  width: 601px;
+  height: 1100px;
+  left: 95px;
+  top: 2281px;
+  background: #FFEBEB;
+  color: #EF835A;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: 180px;
+}
+
+.cupcake { 
+  grid-area: 2 / 4 / 6 / 6; 
+  width: 554px;
+  height: 1350px;
+  left: 790px;
+  top: 2491px;
+  background: #FFEBEB;
+  color: #EF835A;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 120px;
+}
+
+.arroz { 
+  grid-area: 4 / 2 / 8 / 4; 
+  width: 601px;
+  height: 900px;
+  left: 95px;
+  top: 3372px;
+  background: #FFEBEB;
+  color: #EF835A;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: 180px;
+}
+.coco { 
+  grid-area: 4 / 4 / 9 / 6;
+  width: 554px;
+  height: 930px;
+  left: 790px;
+  top: 3833px;
+  background: #FFEBEB;
+  color: #EF835A;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 280px;
+  margin-left: 120px;
+}
+
+.frango { 
+  grid-area: 5 / 2 / 11 / 4; 
+  width: 601px;
+  height: 740px;
+  left: 95px;
+  top: 4248px;
+  background: #FFEBEB;
+  color: #EF835A;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 400px;
+  margin-left: 180px;
+}
+
+
+/*rodapé*/
+footer {
+  display: grid;
+  grid-template-columns: 0.45fr repeat(7, 1fr) 0.45fr;
+  grid-template-rows: 0.45fr repeat(4, 1fr) 0.45fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  background-color: #F8A98A;
+  font-size: 28px;
+}
+
+.rodapelogo { grid-area: 3 / 2 / 5 / 4; }
+
+.homeroda { 
+  grid-area: 2 / 4 / 3 / 5;
+  color: #FFEBEB;
+  text-decoration: none;
+  text-align: center;
+}
+
+.FAQs { 
+  grid-area: 3 / 4 / 4 / 5; 
+  color: #FFEBEB;
+  text-decoration: none;
+  text-align: center;
+}
+
+.sobreroda { 
+  grid-area: 4 / 4 / 5 / 5; 
+  color: #FFEBEB;
+  text-decoration: none;
+  text-align: center;
+}
+
+.contatos { 
+  grid-area: 5 / 4 / 6 / 5; 
+  color: #FFEBEB;
+  text-decoration: none;
+  text-align: center;
+}
+
+.barra1 { 
+  grid-area: 2 / 5 / 6 / 6; 
+  align-self: center;
+  text-align: center;
+}
+
+.jornal { 
+  grid-area: 3 / 6 / 4 / 7; 
+  align-self: center;
+  text-align: center;
+  color: #FFEBEB;
+}
+
+.email { 
+  grid-area: 4 / 6 / 5 / 7;
+  align-self: center;
+  text-align: center;
+}
+
+.barra2 { 
+  grid-area: 2 / 7 / 6 / 8; 
+  align-self: center;
+  text-align: center;
+}
+
+.face { 
+  grid-area: 3 / 8 / 3 / 9; 
+  color: #FFEBEB;
+  align-self: center;
+  text-align: center;
+}
+
+.twitter { 
+  grid-area: 4 / 8 / 4 / 9; 
+  color: #FFEBEB;
+  align-self: center;
+  text-align: center;
+}
+
+.insta { 
+  grid-area: 5 / 8 / 5 / 9; 
+  color: #FFEBEB;
+  align-self: center;
+  text-align: center;
+}
+
+.tiktok {
+  grid-area: 2 / 8 / 2 / 9;
+  color: #FFEBEB;
+  align-self: center;
+  text-align: center;
+}

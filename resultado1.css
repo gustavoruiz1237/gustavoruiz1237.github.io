@@ -1,0 +1,87 @@
+ * {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'poppins', sans-serif;
+  background: #F8A98A; 
+}
+
+/*grid*/
+.resultado_1 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 0.4fr 0.2fr 0.4fr 1fr repeat(3, 0.2fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 15px;
+}
+
+.logo { 
+  grid-area: 1 / 1 / 2 / 2; 
+  margin-left: 30px;
+}
+.patinha_1 { 
+  grid-area: 2 / 1 / 4 / 2; 
+}
+
+.gatinho_1 { 
+  grid-area: 2 / 5 / 4 / 6;
+  text-align: center;
+}
+
+.titulo { 
+  grid-area: 2 / 3 / 3 / 4; 
+}
+
+.gato { 
+  grid-area: 3 / 3 / 4 / 4; 
+}
+
+.texto { 
+  grid-area: 4 / 2 / 5 / 5; 
+}
+
+.ir_para { 
+  grid-area: 6 / 3 / 7 / 4; 
+  text-align: center;
+}
+
+.gatinho_2 { 
+  grid-area: 5 / 1 / 8 / 2;
+}
+
+.decoracao {
+  grid-area: 4 / 5 / 8 / 6;
+  margin-top: 100px;
+}
+
+/* texto */
+.texto {
+  font-size: 40px;
+  font-weight: 700;
+  color: #FFEBEB;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 48px;
+  font-weight: 700;
+  color: #FFEBEB;
+  text-align: center;
+}
+
+.gato {
+  font-size: 48px;
+  font-weight: 700;
+  color: #FFEBEB;
+  text-align: center;
+  background: #EF835A;
+  border-radius: 40px;
+  height: 75px;
+  width: 190px;
+  align-self: center;
+  margin-left: 90px;
+}

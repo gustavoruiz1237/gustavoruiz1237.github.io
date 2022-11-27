@@ -1,0 +1,91 @@
+/*body*/
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'poppins', sans-serif;
+  background: #9DDADD; 
+}
+
+
+/*Grid topo*/
+.topo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 0.4fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 15px;
+}
+
+.logo { 
+  grid-area: 1 / 1 / 2 / 2; 
+  align-self: top;
+}
+.pergunta { 
+  grid-area: 2 / 2 / 3 / 4; 
+  text-align: center;
+}
+.deco1 { 
+  grid-area: 1 / 4 / 3 / 5;
+  align-self: right;
+  text-align: right;
+}
+
+
+/*Pergunta*/
+.pergunta p {
+  color: #FFEBEB;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+
+/*grid baixo*/
+.baixo {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr 0.4fr 1fr 0.4fr;
+  grid-template-rows: 0.2fr 1fr 0.5fr 0.2fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 15px;
+}
+
+.option1 { 
+  grid-area: 1 / 2 / 2 / 3; 
+  text-align: center;
+}
+.option2 { 
+  grid-area: 1 / 4 / 2 / 5; 
+  text-align: center;
+}
+.cinema { 
+  grid-area: 2 / 2 / 3 / 3; 
+  align-self: center;
+  text-align: center;
+}
+.piquenique { 
+  grid-area: 2 / 4 / 3 / 5; 
+  align-self: center;
+  text-align: center;
+}
+.deco2 { 
+  grid-area: 3 / 1 / 5 / 2; 
+}
+
+
+/*opção 1 e 2*/
+.option1, .option2 {
+  color: #FFEBEB;
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 50px;
+}
+
+
+/*imagens*/
+.cinema {
+  margin-left: 0px;
+}
